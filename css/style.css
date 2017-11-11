@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 10px;
+  margin-top: 40px;
+  min-height: 800px; /* Used in this example to enable scrolling */
+}
+
+.navColor {
+  background-color: #120122;
+  border-bottom: 2px solid #993399 !important;
+}
+
+.navbar li {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-weight: bold;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+li:hover {
+  background-color: #993399;
+  height: auto;
+  border-left: 5px solid #c442c4 !important;
+}
+
+.navColor ul li.active {
+  background-color: purple;
+}
+
+/*--cards--*/
+.card {
+  border-radius: 10px;
+}
+.card i {
+  color: #993399;
+  font-weight: bold;
+}
+
+/*--cards--*/
+
+.parOneText {
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  margin-top: 150px;
+  background-color: white;
+  width: 60%;
+  min-height: 20%;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.parallax-container {
+  height: "30%";
+}
+.behanceButton {
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 160px;
+  height: 28px;
+  background-color: #005cff;
+}
+
+.behanceButton a {
+  color: white;
+}
+
+.behanceButton img {
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-top: 4px;
+}
+.behanceText {
+  margin-top: 4px;
+}
+
+/*footer*/
+.page-footer {
+  background-color: #120122;
+}
+
+/*form*/
+
+#form {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#form .input-field label {
+  color: #120122;
+  font-weight: bold;
+}
+#form .input-field input[type="text"]:focus {
+  border-bottom: 1px solid purple;
+  box-shadow: 0 1px 0 0 purple;
+}
+
+.input-field .prefix.active {
+  color: purple;
+}
+
+border-bottom: 1px solid purple;
+box-shadow: 0 1px 0 0 purple;
+
+.i .prefix.active {
+  color: #120122;
+}
+
+#form .input-field.suffix:active {
+  border-bottom: 1px solid purple;
+  box-shadow: 0 1px 0 0 purple;
+}
+
+legend {
+  font-size: 28px;
+}
+.suBut {
+  background: #993399;
+  color: white;
+  height: 40px;
+  width: 100px;
+}
+
+/* mobile */
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+  .side-nav {
+    background-color: black;
+    color: white;
+  }
+
+  li:hover {
+    background-color: #993399;
+    height: auto;
+    color: white;
+  }
+
+  .navColor ul li.active {
+    background-color: purple;
+    color: white;
+  }
+
+  .navColor {
+    color: white;
+  }
+
+  li,
+  ul,
+  .navbar {
+    background-color: #120122;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .mobImg {
+    margin-top: 40;
+    margin-left: -10;
+  }
+}
